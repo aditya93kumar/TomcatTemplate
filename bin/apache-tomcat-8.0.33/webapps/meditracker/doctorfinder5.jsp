@@ -127,7 +127,7 @@ if(!(""+session.getAttribute("D1")).equals("null"))
     
 <div id="portfolio-nospace" class="clearfix bodyColorGray ">
 <div class="col-md-12 text-center animated bounceInDown "style="color:#fff" data-wow-duration=".115s">
-    <hr size="2"  width="94%"><h1>Submit Details</h3><br>
+    <hr size="2"  width="94%"><h1>Login For Doctors</h3><br>
 
 </div>
 </div>

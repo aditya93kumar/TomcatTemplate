@@ -116,7 +116,7 @@ if(!(""+session.getAttribute("customername")).equals("null"))
                 </div>
             </div>
         </div>
-    </div>
+    
 </section>
 
   

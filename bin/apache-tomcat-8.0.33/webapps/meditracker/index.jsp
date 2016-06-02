@@ -122,7 +122,7 @@
     <br><br>
         <div class="mbr-header mbr-header--center mbr-header--wysiwyg row animated fadeInUp">
             
-                <h3 class="mbr-header__text">ABOUT US</h3>
+                <h3 class="mbr-header__text">ABOUT ME</h3>
                 
             
         </div><br><br><br>
@@ -131,7 +131,7 @@
         <div class="mbr-section__row row">
             <div class="mbr-section__col col-xs-12 col-sm-4">
                 <div class="mbr-section__container mbr-section__container--center mbr-section__container--middle">
-                    <figure class="mbr-figure"><img style="border-radius:40%"class="mbr-figure__img" src="assets/images/img-20160120-101552-620x931-34-300x300-56.jpg"></figure>
+                    <figure class="mbr-figure"><img style="border-radius:50%;height:350px"class="mbr-figure__img" src="assets/images/img-20160120-101552-620x931-34-300x300-56.jpg"></figure>
                 </div>
                
                     <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
@@ -140,9 +140,34 @@
                 
                 
                     <div class="mbr-article mbr-article--wysiwyg">
-                        <p>Web-Designer</p>
+                        <p>Web-Developer</p>
+                    </div>
+					<div class="mbr-article mbr-article--wysiwyg">
+                        <p>Computer Science B.Tech</p>
+                    </div>
+					<div class="mbr-article mbr-article--wysiwyg">
+                        <p>JECRC,JAIPUR.</p>
+                    </div>
+					<div class="mbr-article mbr-article--wysiwyg">
+                        <p>+91-8107747252</p>
+                    </div><hr>
+             <br><br><br><br>
+                
+            </div>
+            <div >
+               <br><br><br><br><br><br><br><br><br>
+			   
+					
+                
+                    <div class="mbr-header mbr-header--reduce mbr-header mbr-header--wysiwyg">
+                        <h1 class="mbr-header__text">"Continuous improvement is better, than Delayed Perfection"</h1>
                     </div><br>
-             
+               
+               <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>LET'S KEEP IN TOUCH</p>
+                    </div><br>
+               
                 <div class="mbr-section__container mbr-section__container--last">
                     <div class="mbr-buttons mbr-buttons--center">
 					<a href="https://web.facebook.com/aditya93kumar" style="border-radius:50%"class="mbr-social-icons__icon socicon-bg-facebook" target="_blank"><i class="socicon socicon-facebook"></i> </a> 
@@ -152,53 +177,7 @@
 					</div>
                 </div>
             </div>
-            <div class="mbr-section__col col-xs-12 col-sm-4">
-                <div class="mbr-section__container mbr-section__container--center mbr-section__container--middle">
-                    <figure class="mbr-figure"><img style="border-radius:40%"class="mbr-figure__img" src="assets/images/img-20160120-101552-620x931-73-300x300-40.jpg"></figure>
-                </div>
-                
-                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                        <h3 class="mbr-header__text">AMIT GUPTA</h3>
-                    </div><br>
-               
-                
-                    <div class="mbr-article mbr-article--wysiwyg">
-                        <p>Web-Developer</p>
-                    </div><br>
-               
-                <div class="mbr-section__container mbr-section__container--last">
-                    <div class="mbr-buttons mbr-buttons--center">
-					<a href="https://web.facebook.com/profile.php?id=100006088065495&amp;fref=ts" style="border-radius:50%"class="mbr-social-icons__icon socicon-bg-facebook" target="_blank"><i class="socicon socicon-facebook"></i></a>
-					<a href="https://in.linkedin.com/in/ag141141" style="border-radius:50%"class="mbr-social-icons__icon socicon-bg-linkedin" target="_blank"> <i class="socicon socicon-linkedin"></i></a>
-					<a href="#" style="border-radius:50%;"class="mbr-social-icons__icon socicon-bg-googleplus" target="_blank"> <i class="socicon socicon-googleplus"></i></a>  
-					
-					</div>
-                </div>
-            </div>
             
-            <div class="mbr-section__col col-xs-12 col-sm-4">
-                <div class="mbr-section__container mbr-section__container--center mbr-section__container--middle">
-                    <figure class="mbr-figure"><img style="border-radius:40%"class="mbr-figure__img" src="assets/images/img-20160120-101552-620x931-80-300x300-59.jpg"></figure>
-                </div>
-                
-                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                        <h3 class="mbr-header__text">ANKUR JAIN</h3>
-                    </div><br>
-               
-                
-                    <div class="mbr-article mbr-article--wysiwyg">
-                        <p>Database-Designer</p>
-                    </div><br>
-                
-                <div class="mbr-section__container mbr-section__container--last">
-                    <div class="mbr-buttons mbr-buttons--center">
-					<a href="https://web.facebook.com/Ankjain30?fref=ts" style="border-radius:50%"class="mbr-social-icons__icon socicon-bg-facebook" target="_blank"> <i class="socicon socicon-facebook"></i></a>
-					<a href="https://in.linkedin.com/in/ankur-jain-a9961874" style="border-radius:50%"class="mbr-social-icons__icon socicon-bg-linkedin" target="_blank"> <i class="socicon socicon-linkedin"></i></a>
-					<a href="#" style="border-radius:50%;"class="mbr-social-icons__icon socicon-bg-googleplus" target="_blank"> <i class="socicon socicon-googleplus"></i></a>  
-					
-					</div>
-                </div>
-            </div>
             
             
             

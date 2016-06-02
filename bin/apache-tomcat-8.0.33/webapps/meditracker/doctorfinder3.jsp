@@ -145,7 +145,7 @@ if(!(""+session.getAttribute("D1")).equals("null"))
 	
         <div class="modal-header">
        
-          <h4 class="modal-title">Fill your Details</h4>
+          <h4 class="modal-title">Fill your Details for Booking</h4>
         </div>
         <div class="modal-body">
 		
