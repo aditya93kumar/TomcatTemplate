@@ -3,25 +3,14 @@
 <html>
 <head>
 <meta charset="utf-8" />
-    <title>Registration form Template | PrepBootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	 <link href="bootstrap.css" rel="stylesheet">
-    
-    <link href="bootstrap-responsive.css" rel="stylesheet">
-
-   
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
-<link rel="stylesheet" type="text/css" href="file:///C|/Users/intel/Music/Documents/Unnamed Site 1/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="file:///C|/Users/intel/Music/Documents/Unnamed Site 1/bootstrap.css">
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="file:///C|/Users/intel/Music/Documents/Unnamed Site 1/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="file:///C|/Users/intel/Music/Documents/Unnamed Site 1/bootstrap.css">
+    <link rel="shortcut icon" href="assets/images/imageedit-9-2954139493-123x121-94.png" type="image/x-icon">
+	<title>MEDITRACKER | Online Medical Store</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
+  <link rel="stylesheet" href="assets/design/css/style.css">
+  <link rel="stylesheet" href="assets/design-slider/style.css">
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/design/css/mbr-additional.css" type="text/css">
 <jsp:useBean id="obj" class="p1.RegistrationBean"/>
 </head>
 <body >
@@ -56,7 +45,8 @@ String query1="insert into mlogin values(?,?,?)";
 			  
 			  ps.executeUpdate();
 			  %>
-			  <center><font color="#666666" face="Georgia, Times, serif"><b><h2>Registration Done!!</h2></b></font></center>
+			  <center><font color="#666666" face="Georgia, Times, serif"><b><h2>Registration Done!!</h2></b></font>
+			  <div class="container"><a href="http://javates.azurewebsites.net/meditracker/User.jsp" class="btn btn-info" role="button">Login Now</a></div></center>
 		   <%
 	}
 	else
