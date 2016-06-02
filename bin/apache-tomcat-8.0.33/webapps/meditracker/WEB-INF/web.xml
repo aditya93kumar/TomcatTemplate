@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+  
+  <servlet>
+   <servlet-name>ExamPanel</servlet-name>
+   <servlet-class>ExamPanel</servlet-class>
+</servlet> 
+<servlet-mapping>
+   <servlet-name>ExamPanel</servlet-name>
+   <url-pattern>/servlet/ExamPanel</url-pattern>  
+</servlet-mapping>
+  <servlet>
+   <servlet-name>CaptchaServlet</servlet-name>
+   <servlet-class>CaptchaServlet</servlet-class>
+</servlet> 
+<servlet-mapping>
+   <servlet-name>CaptchaServlet</servlet-name>
+   <url-pattern>/servlet/CaptchaServlet</url-pattern>  
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>SendMail</servlet-name>
+   <servlet-class>SendMail</servlet-class>
+</servlet> 
+<servlet-mapping>
+   <servlet-name>SendMail</servlet-name>
+   <url-pattern>/servlet/SendMail</url-pattern>  
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>SendMail1</servlet-name>
+   <servlet-class>SendMail1</servlet-class>
+</servlet> 
+<servlet-mapping>
+   <servlet-name>SendMail1</servlet-name>
+   <url-pattern>/servlet/SendMail1</url-pattern>  
+</servlet-mapping>
+   
+  
+
+</web-app>
