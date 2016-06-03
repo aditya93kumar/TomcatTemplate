@@ -21,9 +21,9 @@ public class DBInfo1
 	
 	public static Connection getConnection()
 	{
-		String url="jdbc:mysql://localhost:3306/meditracker";
-		String username="root";
-		String password="12345";
+		String url="us-cdbr-azure-southcentral-e.cloudapp.net";
+		String username="bd1ae488caa6a7";
+		String password="fcd68423";
 		try 
 		{
 			con=DriverManager.getConnection(url, username, password);
