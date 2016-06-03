@@ -8,6 +8,14 @@
   metadata-complete="true">
   
   <servlet>
+   <servlet-name>DBInfo</servlet-name>
+   <servlet-class>DBInfo</servlet-class>
+</servlet> 
+<servlet-mapping>
+   <servlet-name>DBInfo</servlet-name>
+   <url-pattern>/servlet/DBInfo</url-pattern>  
+</servlet-mapping>
+  <servlet>
    <servlet-name>ExamPanel</servlet-name>
    <servlet-class>ExamPanel</servlet-class>
 </servlet> 
