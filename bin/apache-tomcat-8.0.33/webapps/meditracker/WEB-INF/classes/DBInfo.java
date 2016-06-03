@@ -21,9 +21,9 @@ public class DBInfo
 	
 	public static Connection getConnection()
 	{
-		String url="us-cdbr-azure-southcentral-e.cloudapp.net";
-		String username="bd1ae488caa6a7";
-		String password="fcd68423";
+		String url="us-cdbr-azure-central-a.cloudapp.net";
+		String username="bef0b8b70be2d0";
+		String password="5a254e6c";
 		try 
 		{
 			con=DriverManager.getConnection(url, username, password);
