@@ -1,0 +1,248 @@
+﻿<html>
+<head>
+<title>About Us</title>
+<link rel='shortcut icon' href='images/jecrc-logo.jpeg' />
+
+
+   <link rel='stylesheet' href='css/style1.css'/>
+	
+	
+    <script src='jss/jquery.min.js'></script>
+	<script src='jss/app1.js'></script>
+	
+	
+	 <link rel="stylesheet" href="css/animate.min.css">
+	
+    <!-- Bootstrap styles -->
+    <link rel='stylesheet' href='css/bootstrap.min.css'/>
+
+ 
+    <!-- jQuery Popup Overlay -->
+    <script src="jss/jquery.popupoverlay.js"></script>
+
+   
+	
+	<!-- Slide in -->
+
+<div id="slide" class="well">
+<h4>Register Here</h4>
+
+<script type="text/javascript">
+
+  function checkPassword(str)
+  {
+    var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    return re.test(str);
+  }
+
+  function checkForm(form)
+  {
+    if(form.username.value == "") {
+      alert("Error: Username cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+    re = /^\w+$/;
+    if(!re.test(form.username.value)) {
+      alert("Error: Username must contain only letters, numbers and underscores!");
+      form.username.focus();
+      return false;
+    }
+    if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
+      if(!checkPassword(form.pwd1.value)) {
+        alert("The password must contain: Atleast 6 character with small letter,capital letter,numeric and special character!!!");
+        form.pwd1.focus();
+        return false;
+      }
+    } else {
+      alert("Error: Please check that you've entered and confirmed your password!");
+      form.pwd1.focus();
+      return false;
+    }
+    return true;
+  }
+
+</script>
+
+
+
+<form class="prettyprint" action="post" name="MainForm" method="post" target="_self" onsubmit="return checkForm(this);">
+<table align:"center";style="border:10px solid #cdcdcd; width:10%; padding:0px;">
+<tr>
+<td style="text-align:right;width:30%;padding:10px;">Name :</td><td><input type="text" name="name" id="name"  style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+<tr>
+<td style="text-align:right;width:30%;padding:10px;">User Name: </td><td><input type="text" name="username" id="username"style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"> E-mail Id:</td><td> <input type="text" name="email" id="email" style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"> contact No.:</td><td> <input type="text" name="contact" id="contact"  style="width:340px;border:1px solid #cdcdcd;"/></td>
+</tr>
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"> College Id:</td><td> <input type="text" name="cid" id="cid"  style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"> Password:</td><td> <input type="password" name="pass1" id="pwd1"  style="width:340px;border:1px solid #cdcdcd;" required="required"/></td>
+</tr>
+
+<tr>
+<td style="text-align:right;width:30%;padding:10px;">Confirm Password:</td><td> <input type="password" name="pass2" id="pwd2"  style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+
+<tr>
+<td style="text-align:right;width:30%;padding:10px;">User Type:</td><td> <select class="form-control" id="salutation" name="salutation" style="width:340px;height: 30px;border:1px solid #cdcdcd;"required="required">
+                             <option value="mr">Student</option>
+                            <option value="ms">Faculty Co-ordinator</option></select>
+                        </td>
+</tr>
+<tr><td></td>
+
+                       <td> <input type="checkbox" id="toc" name="toc"required="required"/>
+                        <label id="label_toc" class="control-label" for="toc">
+                            I agree to the <a href="/terms#student" target="_blank">terms and conditions</a>.
+                        </label>
+                    </td>
+
+</tr>
+
+
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"><input type="submit" name="submit" value="Resister " onclick="  "/></td>
+<td ><input type="submit" name="submit" value="close " class="slide_close btn btn-default" onclick="return ValidatePost();"/></td>
+</tr>
+</table>
+ </form>
+</div>
+
+<script>
+$(document).ready(function () {
+
+    $('#slide').popup({
+        focusdelay: 400,
+        outline: true,
+        vertical: 'top'
+    });
+
+});
+</script>
+
+	
+</head>
+<body>
+<div class="main_div">
+<header>
+<div class="upper">
+<table class="top_table">
+<tr><td>
+<img src="images/jecrc-logo.jpeg" width="90px" height= 90px"/>
+</td><td><center><b><font size=60 color="#66cccc" face="Tahoma">JECRC  Software  Solutions  Pvt.  Ltd.</font></b></center>
+</td></tr></table>
+</div>
+
+
+
+<table>	
+<tr>
+<div class="navigation">
+	<ul class="nav">
+		<li>
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="services.html">Services</a>
+			
+		</li>
+		<li>
+			<a href="contactus.html">Contact us</a>
+		</li>
+		<li>
+			<a href="aboutus.html">About Us</a>
+			
+		</li>
+		<li>
+			<a  href="#" class="overlayLink">Login</a>
+			
+
+			
+		</li>
+	</ul>
+</div>
+</tr>
+</table>
+<div class="overlay" style="display: none;height:180px;">
+				<div class="login-wrapper">
+					<div class="login-content" >
+						<a class="close">x</a>
+						<h3>Sign in</h3>
+						<br>
+						<form action="home" method="post">
+						<label for="username">
+						Username :
+						<input type="text" name="username" id="username" placeholder="username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+						</label>
+						<label for="password">
+						Password :
+						<input type="password" name="password" id="password" placeholder="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+						</label>
+						<button type="submit">Sign in</button>
+						<br>
+						</form>
+						<a class="initialism slide_open btn btn-success">New User's Register here</a>
+					</div>
+				</div>
+</div>
+
+
+
+</header>
+
+
+
+<h2>Meet the team</h2>
+        
+            
+                <div >
+                
+                    <p class="animated fadeInLeft">
+                        <img src="images/aditya.jpg" style="border-radius:50%;size:100px;" width="142"/>
+                        <b>Aditya Kumar:</b> B.tech,Computer Science , IV year, JECRC college, Jaipur,Rajasthan,India.
+                    </p><br/><br/>
+                     <p class="animated fadeInRight">
+                        <img src="images/abhi.jpg" style="border-radius:50%;size:100px;" width="142"/>
+                        <b>Abhishek Soni:</b> B.tech,Computer Science , IV year, JECRC college, Jaipur,Rajasthan,India.
+                    </p><br/></br>
+                     <p class="animated fadeInLeft">
+                        <img src="images/ankit.jpg" style="border-radius:50%;size:100px;" width="142"/>
+                        <b>Ankit sharma:</b> B.tech,Computer Science , IV year, JECRC college, Jaipur,Rajasthan,India.
+                    </p><br/>
+					 
+					</div>
+				
+	
+
+	
+
+	
+    
+
+
+<footer class="foot">
+<table "style=width:100%">
+<tr>
+<td><b><font color="#0099FF">Find Us On:</font></b></td>
+<td> 
+<a href=""><img src="images/Follow_Twitter.jpg" height="35" width="80"></a>
+</td>
+<td>
+   <a href=""><img src="images/fblike.png" height="40" width="80"></a>
+</td>
+</tr>
+</table>
+<p align="center" font="arial">Copyright © 2016 JECRC</p>
+</footer>
+</div>
+</body>
+</html>

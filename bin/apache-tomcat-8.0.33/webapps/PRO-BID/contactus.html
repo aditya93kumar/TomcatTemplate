@@ -1,0 +1,261 @@
+﻿<html>
+<head>
+<title>Contact Us</title>
+<link rel='shortcut icon' href='images/jecrc-logo.jpeg' />
+
+
+   <link rel='stylesheet' href='css/style1.css'/>
+	
+	
+    <script src='jss/jquery.min.js'></script>
+	<script src='jss/app1.js'></script>
+	
+	
+	 <link rel="stylesheet" href="css/animate.min.css">
+	
+    <!-- Bootstrap styles -->
+    <link rel='stylesheet' href='css/bootstrap.min.css'/>
+
+ 
+    <!-- jQuery Popup Overlay -->
+    <script src="jss/jquery.popupoverlay.js"></script>
+
+   
+	
+	<!-- Slide in -->
+
+<div id="slide" class="well">
+<h4>Register Here</h4>
+
+<script type="text/javascript">
+
+  function checkPassword(str)
+  {
+    var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    return re.test(str);
+  }
+
+  function checkForm(form)
+  {
+    if(form.username.value == "") {
+      alert("Error: Username cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+    re = /^\w+$/;
+    if(!re.test(form.username.value)) {
+      alert("Error: Username must contain only letters, numbers and underscores!");
+      form.username.focus();
+      return false;
+    }
+    if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
+      if(!checkPassword(form.pwd1.value)) {
+        alert("The password must contain: Atleast 6 character with small letter,capital letter,numeric and special character!!!");
+        form.pwd1.focus();
+        return false;
+      }
+    } else {
+      alert("Error: Please check that you've entered and confirmed your password!");
+      form.pwd1.focus();
+      return false;
+    }
+    return true;
+  }
+
+</script>
+
+
+
+<form class="prettyprint" action="post" name="MainForm" method="post" target="_self" onsubmit="return checkForm(this);">
+<table align:"center";style="border:10px solid #cdcdcd; width:10%; padding:0px;">
+<tr>
+<td style="text-align:right;width:30%;padding:10px;">Name :</td><td><input type="text" name="name" id="name"  style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+<tr>
+<td style="text-align:right;width:30%;padding:10px;">User Name: </td><td><input type="text" name="username" id="username"style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"> E-mail Id:</td><td> <input type="text" name="email" id="email" style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"> contact No.:</td><td> <input type="text" name="contact" id="contact"  style="width:340px;border:1px solid #cdcdcd;"/></td>
+</tr>
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"> College Id:</td><td> <input type="text" name="cid" id="cid"  style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"> Password:</td><td> <input type="password" name="pass1" id="pwd1"  style="width:340px;border:1px solid #cdcdcd;" required="required"/></td>
+</tr>
+
+<tr>
+<td style="text-align:right;width:30%;padding:10px;">Confirm Password:</td><td> <input type="password" name="pass2" id="pwd2"  style="width:340px;border:1px solid #cdcdcd;"required="required"/></td>
+</tr>
+
+<tr>
+<td style="text-align:right;width:30%;padding:10px;">User Type:</td><td> <select class="form-control" id="salutation" name="salutation" style="width:340px;height: 30px;border:1px solid #cdcdcd;"required="required">
+                             <option value="mr">Student</option>
+                            <option value="ms">Faculty Co-ordinator</option></select>
+                        </td>
+</tr>
+<tr><td></td>
+
+                       <td> <input type="checkbox" id="toc" name="toc"required="required"/>
+                        <label id="label_toc" class="control-label" for="toc">
+                            I agree to the <a href="/terms#student" target="_blank">terms and conditions</a>.
+                        </label>
+                    </td>
+
+</tr>
+
+
+<tr>
+<td style="text-align:right;width:30%;padding:10px;"><input type="submit" name="submit" value="Resister " onclick="  "/></td>
+<td ><input type="submit" name="submit" value="close " class="slide_close btn btn-default" onclick="return ValidatePost();"/></td>
+</tr>
+</table>
+ </form>
+</div>
+
+<script>
+$(document).ready(function () {
+
+    $('#slide').popup({
+        focusdelay: 400,
+        outline: true,
+        vertical: 'top'
+    });
+
+});
+</script>
+
+	
+</head>
+<body>
+<div class="main_div">
+<header>
+<div class="upper">
+<table class="top_table">
+<tr><td>
+<img src="images/jecrc-logo.jpeg" width="90px" height= 90px"/>
+</td><td><center><b><font size=60 color="#66cccc" face="Tahoma">JECRC  Software  Solutions  Pvt.  Ltd.</font></b></center>
+</td></tr></table>
+</div>
+
+
+
+<table>	
+<tr>
+<div class="navigation">
+	<ul class="nav">
+		<li>
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="services.html">Services</a>
+			
+		</li>
+		<li>
+			<a href="contactus.html">Contact us</a>
+		</li>
+		<li>
+			<a href="aboutus.html">About Us</a>
+			
+		</li>
+		<li>
+			<a  href="#" class="overlayLink">Login</a>
+			
+
+			
+		</li>
+	</ul>
+</div>
+</tr>
+</table>
+<div class="overlay" style="display: none;height:180px;">
+				<div class="login-wrapper">
+					<div class="login-content" >
+						<a class="close">x</a>
+						<h3>Sign in</h3>
+						<br>
+						<form action="home" method="post">
+						<label for="username">
+						Username :
+						<input type="text" name="username" id="username" placeholder="username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+						</label>
+						<label for="password">
+						Password :
+						<input type="password" name="password" id="password" placeholder="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+						</label>
+						<button type="submit">Sign in</button>
+						<br>
+						</form>
+						<a class="initialism slide_open btn btn-success">New User's Register here</a>
+					</div>
+				</div>
+</div>
+
+
+
+</header>
+
+
+
+
+        
+         <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="form1-15" style="background-image: url(assets/images/7iixr-640x479-31.png);">
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(34, 34, 34);"></div>
+    <div class="mbr-section__container mbr-section__container--std-padding container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
+                        <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                            <h2 class="mbr-header__text">CONTACT US</h2>
+                        </div>
+                        <div data-form-alert="true">
+                            <div class="hide" data-form-alert-success="true">Thanks for filling out form!</div>
+                        </div>
+                        <form action=" " method="post" data-form-title="CONTACT US">
+                            <input type="hidden" value="JSAmGOEcvKUzTLptRMAA4Vu38b886tpyXOzZ0dl4EFdTu7XDjwUoeHo4SXzJa3milc3ysXXjv6TXLOWpmIpO7UyWTdJWwoCwzapR1uzTNigd7MNP0XsC7tx5gMMdCVJ3" data-form-email="true">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" name="phone" placeholder="Phone" data-form-field="Phone">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="7" placeholder="Message" data-form-field="Message"></textarea>
+                            </div>
+                            <div class="mbr-buttons mbr-buttons--right"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-danger">CONTACT US</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+
+<footer class="foot">
+<table "style=width:100%">
+<tr>
+<td><b><font color="#0099FF">Find Us On:</font></b></td>
+<td> 
+<a href=""><img src="images/Follow_Twitter.jpg" height="35" width="80"></a>
+</td>
+<td>
+   <a href=""><img src="images/fblike.png" height="40" width="80"></a>
+</td>
+</tr>
+</table>
+<p align="center" font="arial">Copyright © 2016 JECRC</p>
+</footer>
+</div>
+</body>
+</html>
