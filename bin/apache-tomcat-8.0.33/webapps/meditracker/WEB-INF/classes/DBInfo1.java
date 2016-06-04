@@ -21,7 +21,7 @@ public class DBInfo1
 	
 	public static Connection getConnection()
 	{
-		String url="mysql://bef0b8b70be2d0:5a254e6c@us-cdbr-azure-central-a.cloudapp.net/meditracker";
+		String url="us-cdbr-azure-central-a.cloudapp.net/meditracker";
 		String username="bef0b8b70be2d0";
 		String password="5a254e6c";
 		try 
