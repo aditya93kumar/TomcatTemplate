@@ -67,7 +67,7 @@ public class register extends HttpServlet {
       //String site = new String("http://localhost:8080/PRO-BID");
 
       response.setStatus(response.SC_MOVED_TEMPORARILY);
-      response.setHeader("Refresh", "10; URL=http://localhost:8080/PRO-BID"); 
+      response.setHeader("Refresh", "10; URL=http://myjavaproject2.azurewebsites.net/PRO-BID"); 
 		
 	}
 
