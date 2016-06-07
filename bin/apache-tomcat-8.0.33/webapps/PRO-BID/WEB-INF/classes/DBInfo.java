@@ -27,7 +27,7 @@ import java.sql.SQLException;
 			
 			try
 			{
-		   con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jecrc", "root", "12345");
+		   con=DriverManager.getConnection("jdbc:mysql://us-cdbr-azure-central-a.cloudapp.net/pro-bid", "b2bd6a3079c37d", "8e99e464 ");
 			}
 			catch(Exception e)
 			{

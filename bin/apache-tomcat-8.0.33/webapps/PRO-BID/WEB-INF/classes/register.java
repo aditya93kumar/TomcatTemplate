@@ -1,10 +1,10 @@
-
+import java.io.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
+import java.sql.Date;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -49,18 +49,25 @@ public class register extends HttpServlet {
 			int res=ps.executeUpdate();
 			if(res==1)
 			{
-				out.println("<h1>Request Sent Wait for Approval</h1>");
+				out.println("<h1>Request has been Sent to admin. Please Wait for Approval.</h1><br><h2>Redirecting to home page.......<img src='images/redirect.jpeg' width=90px height=90px></h2>");
 			}
 			else
 			{
-				out.println("<h1>Request already sent OR please check your mail and try to login if registered previously</h1>");
+				out.println("<h1>Request already sent OR please check your mail and try to login if registered previously</h1><br><h2>Redirecting to home page.......<img src='images/redirect.jpeg' width=90px height=90px></h2>");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			out.println("<h1>Request already sent OR please check your mail and try to login if registered previously</h1>");
+			out.println("<h1>Request already sent OR please check your mail and try to login if registered previously.</h1><br><h2>Redirecting to home page.......<img src='images/redirect.jpeg' width=90px height=90px></h2>");
 		}
-		
+		 // Set response content type
+      response.setContentType("text/html");
+
+      // New location to be redirected
+      //String site = new String("http://localhost:8080/PRO-BID");
+
+      response.setStatus(response.SC_MOVED_TEMPORARILY);
+      response.setHeader("Refresh", "10; URL=http://localhost:8080/PRO-BID"); 
 		
 	}
 
