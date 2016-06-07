@@ -1,15 +1,15 @@
 
 
-	import java.sql.Connection;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
-	public class DBInfo 
-	{
-		private static Connection con=null;
+public class DBInfo 
+{
+		static Connection con;
 		static
 		{
 			try
