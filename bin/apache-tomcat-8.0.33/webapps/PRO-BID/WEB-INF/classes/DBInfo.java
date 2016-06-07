@@ -27,7 +27,7 @@ public class DBInfo
 			
 			try
 			{
-		   con=DriverManager.getConnection("jdbc:mysql://us-cdbr-azure-central-a.cloudapp.net/pro-bid", "b2bd6a3079c37d", "8e99e464 ");
+		   con=DriverManager.getConnection("jdbc:mysql://us-cdbr-azure-central-a.cloudapp.net/pro-bid", "b2bd6a3079c37d", "8e99e464");
 			}
 			catch(Exception e)
 			{
